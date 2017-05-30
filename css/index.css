@@ -146,6 +146,9 @@ h5 {
 .c-grid__center .m-roles__item {
   margin: 0;
 }
+.c-grid__center .m-game-chat__section {
+  background-size: cover;
+}
 .c-grid__center .b-chat-form.b-chat-form--low::before,
 .c-grid__center .b-chat-form.b-chat-form--low::after,
 .c-grid__center .b-chat-form.b-chat-form--low .bg-text {
