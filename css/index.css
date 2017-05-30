@@ -1,0 +1,129 @@
+html,
+body,
+.g-wrapper__inner,
+.b-messages,
+.b-message,
+.c-grid {
+  height: 100%;
+}
+.g-wrapper {
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.c-grid {
+  display: flex;
+  justify-content: center;
+}
+.c-grid__side,
+.c-grid__center + .c-grid__side {
+  display: none;
+}
+.c-grid__center {
+  max-width: 1080px;
+  width: 100%;
+}
+.c-grid__center .b-slider__slide {
+  background: url("../img/slide.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+}
+.c-grid__center .b-nav {
+  flex-shrink: 0;
+}
+.c-grid__center .m-chat {
+  flex-grow: 1;
+  justify-content: flex-end;
+  padding-top: 5px;
+  position: static;
+}
+.c-grid__center .b-messages {
+  width: 100%;
+  overflow-y: auto;
+}
+.c-grid__center .b-messages .b-message__text {
+  width: 100%;
+}
+.c-grid__center .msg-field {
+  display: flex;
+  width: 100%;
+}
+.c-grid__center .b-chat-form {
+  background: none;
+  width: 100%;
+  position: relative;
+}
+.c-grid__center .b-chat-form:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 78px;
+  background: url("../img/msg-field/left.png") no-repeat 0 0;
+}
+.c-grid__center .b-chat-form .btn-left,
+.c-grid__center .b-chat-form .bg-text,
+.c-grid__center .b-chat-form .btn-right {
+  background: url("../img/msg-field/center.png") repeat-x 0 0;
+}
+.c-grid__center .b-chat-form .bg-text {
+  flex-grow: 1;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  padding: 0 65px;
+}
+.c-grid__center .b-chat-form .bg-text .s-message {
+  padding-right: 50px;
+}
+.c-grid__center .b-chat-form .bg-text .s-message__input {
+  width: 100%;
+}
+.c-grid__center .b-chat-form .bg-text .s-smiles {
+  right: 10px;
+}
+.c-grid__center .b-chat-form .btn-left button {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.c-grid__center .b-chat-form .btn-right button {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.c-grid__center .b-chat-form:after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 78px;
+  background: url("../img/msg-field/right.png") no-repeat 0 0;
+}
+@media (min-width: 1081px) {
+  .c-grid__center .b-slider__slide {
+    height: 430px;
+  }
+  .c-grid__center .b-messages {
+    width: 80%;
+  }
+}
+@media (min-width: 961px) and (max-width: 1080px) {
+  .c-grid__center .b-slider__slide {
+    height: 300px;
+  }
+  .c-grid__center .b-messages {
+    width: 90%;
+  }
+}
+@media (min-width: 641px) and (max-width: 960px) {
+  .c-grid__center .b-slider__slide {
+    height: 270px;
+  }
+}
+@media (max-width: 640px) {
+  .c-grid__center .b-slider__slide {
+    height: 240px;
+  }
+}
