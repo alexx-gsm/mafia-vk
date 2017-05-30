@@ -135,3 +135,39 @@ body,
 h5 {
   color: red;
 }
+.c-grid__center .m-roles {
+  justify-content: center;
+  border: 1px solid #3c3c3c;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 3px;
+  background: rgba(132, 132, 132, 0.2);
+}
+.c-grid__center .m-roles__item {
+  margin: 0;
+}
+.c-grid__center .b-chat-form.b-chat-form--low::before,
+.c-grid__center .b-chat-form.b-chat-form--low::after,
+.c-grid__center .b-chat-form.b-chat-form--low .bg-text {
+  height: 70px;
+}
+@media (min-width: 1081px) {
+  .c-grid__center .m-game-chat {
+    padding: 0 10%;
+  }
+}
+@media (min-width: 961px) and (max-width: 1080px) {
+  .c-grid__center .m-game-chat {
+    padding: 0 5%;
+  }
+}
+@media (min-width: 641px) and (max-width: 960px) {
+  .c-grid__center .m-game-chat {
+    padding: 0;
+  }
+}
+@media (max-width: 640px) {
+  .c-grid__center .m-game-chat {
+    padding: 0;
+  }
+}
