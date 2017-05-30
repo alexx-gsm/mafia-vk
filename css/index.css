@@ -1,8 +1,6 @@
 html,
 body,
 .g-wrapper__inner,
-.b-messages,
-.b-message,
 .c-grid {
   height: 100%;
 }
@@ -31,6 +29,30 @@ body,
   background-size: cover;
   width: 100%;
 }
+@media (min-width: 1081px) {
+  .c-grid__center .b-slider__slide {
+    height: 430px;
+  }
+}
+@media (min-width: 961px) and (max-width: 1080px) {
+  .c-grid__center .b-slider__slide {
+    height: 300px;
+  }
+}
+@media (min-width: 641px) and (max-width: 960px) {
+  .c-grid__center .b-slider__slide {
+    height: 270px;
+  }
+}
+@media (max-width: 640px) {
+  .c-grid__center .b-slider__slide {
+    height: 240px;
+  }
+}
+.b-messages,
+.b-message {
+  height: 100%;
+}
 .c-grid__center .b-nav {
   flex-shrink: 0;
 }
@@ -42,7 +64,6 @@ body,
 }
 .c-grid__center .b-messages {
   width: 100%;
-  overflow-y: auto;
 }
 .c-grid__center .b-messages .b-message__text {
   width: 100%;
@@ -102,28 +123,32 @@ body,
   background: url("../img/msg-field/right.png") no-repeat 0 0;
 }
 @media (min-width: 1081px) {
-  .c-grid__center .b-slider__slide {
-    height: 430px;
-  }
   .c-grid__center .b-messages {
     width: 80%;
   }
 }
 @media (min-width: 961px) and (max-width: 1080px) {
-  .c-grid__center .b-slider__slide {
-    height: 300px;
-  }
   .c-grid__center .b-messages {
     width: 90%;
   }
 }
-@media (min-width: 641px) and (max-width: 960px) {
-  .c-grid__center .b-slider__slide {
-    height: 270px;
+h5 {
+  color: red;
+}
+.c-grid__center .m-game-chat {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1081px) {
+  .c-grid__center .m-game-chat__wrap {
+    width: 80%;
+  }
+  .c-grid__center .b-notice .s-text--media {
+    width: 80%;
   }
 }
-@media (max-width: 640px) {
-  .c-grid__center .b-slider__slide {
-    height: 240px;
+@media (min-width: 961px) and (max-width: 1080px) {
+  .c-grid__center .m-game-chat__wrap {
+    width: 90%;
   }
 }
