@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="765ff490-08cb-4077-aa53-785e55fe743f" name="Default" comment="chat-4">
+    <list default="true" id="765ff490-08cb-4077-aa53-785e55fe743f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/msg-field/bg-input-elem.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/__chat-4.less" afterPath="$PROJECT_DIR$/less/__chat-4.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/__common.less" afterPath="$PROJECT_DIR$/less/__common.less" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -63,11 +64,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="__common.less" pinned="false" current-in-tab="false">
+          <file leaf-file-name="__common.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/less/__common.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2037">
-                  <caret line="127" column="23" lean-forward="true" selection-start-line="127" selection-start-column="23" selection-end-line="127" selection-end-column="23" />
+                <state relative-caret-position="555">
+                  <caret line="82" column="75" lean-forward="false" selection-start-line="82" selection-start-column="75" selection-end-line="82" selection-end-column="75" />
                   <folding />
                 </state>
               </provider>
@@ -83,10 +84,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="__chat-4.less" pinned="false" current-in-tab="true">
+          <file leaf-file-name="__chat-4.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/less/__chat-4.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
+                <state relative-caret-position="607">
                   <caret line="119" column="55" lean-forward="false" selection-start-line="119" selection-start-column="55" selection-end-line="119" selection-end-column="55" />
                   <folding />
                 </state>
@@ -131,8 +132,8 @@
         <option value="$PROJECT_DIR$/tournament-new.html" />
         <option value="$PROJECT_DIR$/less/__tournament.less" />
         <option value="$PROJECT_DIR$/chat4-new.html" />
-        <option value="$PROJECT_DIR$/less/__common.less" />
         <option value="$PROJECT_DIR$/less/__chat-4.less" />
+        <option value="$PROJECT_DIR$/less/__common.less" />
       </list>
     </option>
   </component>
@@ -338,7 +339,7 @@
       <workItem from="1496117802054" duration="16638000" />
       <workItem from="1496142970050" duration="2405000" />
       <workItem from="1496146205925" duration="1618000" />
-      <workItem from="1496199891304" duration="16922000" />
+      <workItem from="1496199891304" duration="18005000" />
     </task>
     <task id="LOCAL-00001" summary="chat-4">
       <created>1496142436715</created>
@@ -375,11 +376,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496222087289</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="chat-4">
+      <created>1496222599576</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1496222599576</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37583000" />
+    <option name="totallyTimeSpent" value="38666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1922" height="1028" extended-state="6" />
@@ -644,14 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/__common.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2037">
-          <caret line="127" column="23" lean-forward="true" selection-start-line="127" selection-start-column="23" selection-end-line="127" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chat4-new.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1481">
@@ -670,8 +670,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/less/__chat-4.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="607">
           <caret line="119" column="55" lean-forward="false" selection-start-line="119" selection-start-column="55" selection-end-line="119" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/__common.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="82" column="75" lean-forward="false" selection-start-line="82" selection-start-column="75" selection-end-line="82" selection-end-column="75" />
           <folding />
         </state>
       </provider>

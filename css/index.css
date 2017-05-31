@@ -86,6 +86,9 @@ body,
   height: 78px;
   background: url("../img/msg-field/right.png") no-repeat 0 0;
 }
+.c-grid__center .b-chat-form.b-chat-form--low .s-message--dark {
+  background: url("../img/msg-field/bg-input-elem.png") repeat;
+}
 @media (min-width: 961px) and (max-width: 1080px) {
   html {
     font-size: 14px;
