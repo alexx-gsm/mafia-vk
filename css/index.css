@@ -324,6 +324,12 @@ h5 {
     right: 0;
     bottom: -1px;
   }
+  .c-grid__center .m-game-chat .b-notice {
+    margin-bottom: 5px;
+  }
+  .c-grid__center .m-game-chat .b-notice.b-notice--end {
+    margin-bottom: 20px;
+  }
   .c-grid__center .m-game-chat .b-counter {
     font-size: 5vw;
   }
