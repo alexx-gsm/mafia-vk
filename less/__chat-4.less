@@ -19,8 +19,12 @@ h5 { color: red; }
         &::before,
         &::after,
         .bg-text {
-            height: 70px;
+            height: 78px;
         }
+    }
+    .quattro {
+        display: flex;
+        flex-wrap: nowrap;
     }
 }
 
@@ -45,5 +49,85 @@ h5 { color: red; }
 @media (max-width: 640px) {
     .c-grid__center {
         .m-game-chat { padding: 0; }
+        .s-text {
+            padding: 5px 10px;
+            border-radius: 15px;
+
+        }
+        .s-text.s-text--media {
+            padding: 0 10px 0 80px;
+            height: 35px;
+            justify-content: flex-start;
+
+            img { height: 35px; }
+        }
+        .s-text__inner {
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+        }
+
+        .quattro { width: 100%; }
+        .m-roles__item {
+            width: 25%;
+            height: 12vw;
+            background-size: cover;
+
+            &:not(:last-child) { margin-right: 5px; }
+            .m-roles__number {
+                font-size: 3vw;
+                left: 15%;
+            }
+            .b-ava {
+                width: 30%;
+                height: auto;
+                margin: 0;
+                right: 5%;
+            }
+
+            .m-roles__name {
+                bottom: 0;
+                right: 5%;
+                width: 90%;
+
+                span {
+                    font-size: 3vw;
+                    font-weight: 500;
+                    align-self: flex-end;
+                }
+            }
+            .m-roles__hint {
+                right: -1vw;
+                font-size: 3vw;
+                width: 4vw;
+                height: 4vw;
+                font-weight: bold;
+            }
+            .m-roles__btn {
+                width: 80%;
+                height: 40%;
+                top: 55%;
+            }
+            &.m-roles__item--selected::after,
+            &.m-roles__item--selected2::after {
+                top: 2px;
+                left: 0;
+                right: 0;
+                bottom: -1px;
+            }
+        }
+        .m-game-chat {
+            .b-counter { font-size: 5vw; }
+            .b-counter__item { height: 7vw; line-height: 7vw;}
+            .b-ava {
+                width: 11vw;
+                height: 11vw;
+                margin-right: 8px;
+            }
+            .s-text__inner {
+                font-size: 3vw;
+                line-height: 4vw;
+                display: block;
+            }
+        }
     }
 }

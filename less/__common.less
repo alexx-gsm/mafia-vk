@@ -23,32 +23,166 @@ html, body, .g-wrapper__inner, .c-grid { height: 100%; }
     width: 100%;
 
     .b-slider__slide {
-        background: url("./../img/slide.jpg") no-repeat center;
+        //background: url("./../img/banner2.jpg") no-repeat 0 0;
         background-size: cover;
         width: 100%;
+        //height: 60px;
+    }
+    .b-btn-img { flex-shrink: 0; }
+    .msg-field {
+        overflow: hidden;
+        flex-shrink: 0;
+        min-height: 45px;
+    }
+    .b-chat-form {
+        background: none;
+        width: 100%;
+        position: relative;
+        &:before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 78px;
+            background: url("./../img/msg-field/left.png") no-repeat 0 0;
+        }
+
+        .btn-left,
+        .bg-text,
+        .btn-right {
+            background: url("./../img/msg-field/center.png") repeat-x 0 0;
+        }
+        .bg-text {
+            flex-grow: 1;
+            height: 78px;
+            display: flex;
+            align-items: center;
+            padding: 0 65px;
+
+            .s-message { padding-right: 50px; }
+            .s-message__input { width: 100%; }
+            .s-smiles { right: 10px; }
+        }
+        .btn-left button {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .btn-right button {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        &:after {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 78px;
+            background: url("./../img/msg-field/right.png") no-repeat 0 0;
+        }
     }
 }
 
 
 @media (min-width: 1081px) {
     .c-grid__center {
-        .b-slider__slide { height: 430px; }
+
     }
 
 }
 @media (min-width: 961px) and (max-width: 1080px) {
+    html { font-size: 14px; }
     .c-grid__center {
-        .b-slider__slide { height: 300px; }
+
     }
 
 }
 @media (min-width: 641px) and (max-width: 960px) {
+    html { font-size: 14px; }
     .c-grid__center {
-        .b-slider__slide { height: 270px; }
+        .b-nav__btn img { height: 55px; }
     }
 }
 @media (max-width: 640px) {
+    html { font-size: 10px; }
     .c-grid__center {
-        .b-slider__slide { height: 240px; }
+        .b-nav__btn img { height: 40px; }
+        .b-ava {
+            margin: 0 13px 0 5px;
+            flex-shrink: 0;
+            width: 45px;
+            height: 45px;
+        }
+        .b-message__text {
+            padding: 3px 10px;
+            border-radius: 8px;
+        }
+        .b-message .s-text, .b-message .s-title {
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+        }
+        .b-notice--direct-center {
+            .s-text__inner {
+                //display: flex;
+                //align-items: center;
+                //text-align: center;
+                //img {
+                //    flex-shrink: 0;
+                //    padding: 0 10px 0 0;
+                //    width: 24px;
+                //    height: 25px;
+                //}
+            }
+        }
+
+        .msg-field { height: 8vh; }
+        .b-chat-form:before,
+        .b-chat-form:after {
+            flex-shrink: 0;
+        }
+        .b-chat-form.b-chat-form--low { height: 78px; }
+        .b-chat-form .bg-text { align-items: flex-start; padding: 0 30px; }
+        .b-chat-form .bg-text .s-message {
+            border-radius: 10px;
+            height: 38px;
+            padding-right: 30px;
+            margin-right: 0;
+        }
+        .b-chat-form.b-chat-form--low .s-message--dark {
+            background-position: center;
+        }
+        .b-chat-form.b-chat-form--low .s-message--dark .s-message__input {
+            font-size: 13px;
+            padding: 5px 15px;
+            line-height: 13px;
+        }
+        .b-chat-form .bg-text .s-smiles {
+            right: 5px;
+            top: 50%;
+            width: 24px;
+            height: 24px;
+        }
+        .b-chat-form .btn-left button,
+        .b-chat-form .btn-right button{
+            width: 38px;
+            height: 38px;
+        }
+        .b-chat-form .s-btn--red,
+        .b-chat-form .s-btn--red:hover {
+            background: url("./../img/msg-field/gun-1.png") no-repeat center;
+            background-size: contain;
+        }
+        .b-chat-form .s-btn--red:active {
+            background: url("./../img/msg-field/gun-2.png") no-repeat center;
+            background-size: contain;
+        }
+        .b-chat-form .s-btn--green,
+        .b-chat-form .s-btn--green:hover {
+            background: url("./../img/msg-field/gun-green.png") no-repeat center;
+            background-size: contain;
+        }
+        .b-chat-form .s-btn--green:active {
+            background: url("./../img/msg-field/gun-green-dark.png") no-repeat center;
+            background-size: contain;
+        }
     }
 }

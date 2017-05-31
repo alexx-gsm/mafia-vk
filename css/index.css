@@ -25,52 +25,16 @@ body,
   width: 100%;
 }
 .c-grid__center .b-slider__slide {
-  background: url("../img/slide.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
 }
-@media (min-width: 1081px) {
-  .c-grid__center .b-slider__slide {
-    height: 430px;
-  }
-}
-@media (min-width: 961px) and (max-width: 1080px) {
-  .c-grid__center .b-slider__slide {
-    height: 300px;
-  }
-}
-@media (min-width: 641px) and (max-width: 960px) {
-  .c-grid__center .b-slider__slide {
-    height: 270px;
-  }
-}
-@media (max-width: 640px) {
-  .c-grid__center .b-slider__slide {
-    height: 240px;
-  }
-}
-.b-messages,
-.b-message {
-  height: 100%;
-}
-.c-grid__center .b-nav {
+.c-grid__center .b-btn-img {
   flex-shrink: 0;
 }
-.c-grid__center .m-chat {
-  flex-grow: 1;
-  justify-content: flex-end;
-  padding-top: 5px;
-  position: static;
-}
-.c-grid__center .b-messages {
-  width: 100%;
-}
-.c-grid__center .b-messages .b-message__text {
-  width: 100%;
-}
 .c-grid__center .msg-field {
-  display: flex;
-  width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 45px;
 }
 .c-grid__center .b-chat-form {
   background: none;
@@ -122,6 +86,123 @@ body,
   height: 78px;
   background: url("../img/msg-field/right.png") no-repeat 0 0;
 }
+@media (min-width: 961px) and (max-width: 1080px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 641px) and (max-width: 960px) {
+  html {
+    font-size: 14px;
+  }
+  .c-grid__center .b-nav__btn img {
+    height: 55px;
+  }
+}
+@media (max-width: 640px) {
+  html {
+    font-size: 10px;
+  }
+  .c-grid__center .b-nav__btn img {
+    height: 40px;
+  }
+  .c-grid__center .b-ava {
+    margin: 0 13px 0 5px;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+  }
+  .c-grid__center .b-message__text {
+    padding: 3px 10px;
+    border-radius: 8px;
+  }
+  .c-grid__center .b-message .s-text,
+  .c-grid__center .b-message .s-title {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  .c-grid__center .msg-field {
+    height: 8vh;
+  }
+  .c-grid__center .b-chat-form:before,
+  .c-grid__center .b-chat-form:after {
+    flex-shrink: 0;
+  }
+  .c-grid__center .b-chat-form.b-chat-form--low {
+    height: 78px;
+  }
+  .c-grid__center .b-chat-form .bg-text {
+    align-items: flex-start;
+    padding: 0 30px;
+  }
+  .c-grid__center .b-chat-form .bg-text .s-message {
+    border-radius: 10px;
+    height: 38px;
+    padding-right: 30px;
+    margin-right: 0;
+  }
+  .c-grid__center .b-chat-form.b-chat-form--low .s-message--dark {
+    background-position: center;
+  }
+  .c-grid__center .b-chat-form.b-chat-form--low .s-message--dark .s-message__input {
+    font-size: 13px;
+    padding: 5px 15px;
+    line-height: 13px;
+  }
+  .c-grid__center .b-chat-form .bg-text .s-smiles {
+    right: 5px;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+  }
+  .c-grid__center .b-chat-form .btn-left button,
+  .c-grid__center .b-chat-form .btn-right button {
+    width: 38px;
+    height: 38px;
+  }
+  .c-grid__center .b-chat-form .s-btn--red,
+  .c-grid__center .b-chat-form .s-btn--red:hover {
+    background: url("../img/msg-field/gun-1.png") no-repeat center;
+    background-size: contain;
+  }
+  .c-grid__center .b-chat-form .s-btn--red:active {
+    background: url("../img/msg-field/gun-2.png") no-repeat center;
+    background-size: contain;
+  }
+  .c-grid__center .b-chat-form .s-btn--green,
+  .c-grid__center .b-chat-form .s-btn--green:hover {
+    background: url("../img/msg-field/gun-green.png") no-repeat center;
+    background-size: contain;
+  }
+  .c-grid__center .b-chat-form .s-btn--green:active {
+    background: url("../img/msg-field/gun-green-dark.png") no-repeat center;
+    background-size: contain;
+  }
+}
+.b-messages,
+.b-message {
+  height: 100%;
+}
+.c-grid__center .b-nav {
+  flex-shrink: 0;
+}
+.c-grid__center .m-chat {
+  flex-grow: 1;
+  justify-content: flex-end;
+  padding-top: 5px;
+  position: static;
+}
+.c-grid__center .b-messages {
+  width: 100%;
+  overflow-y: auto;
+}
+.c-grid__center .b-messages .b-message__text {
+  width: 100%;
+}
+.c-grid__center .msg-field {
+  display: flex;
+  width: 100%;
+}
 @media (min-width: 1081px) {
   .c-grid__center .b-messages {
     width: 80%;
@@ -152,7 +233,11 @@ h5 {
 .c-grid__center .b-chat-form.b-chat-form--low::before,
 .c-grid__center .b-chat-form.b-chat-form--low::after,
 .c-grid__center .b-chat-form.b-chat-form--low .bg-text {
-  height: 70px;
+  height: 78px;
+}
+.c-grid__center .quattro {
+  display: flex;
+  flex-wrap: nowrap;
 }
 @media (min-width: 1081px) {
   .c-grid__center .m-game-chat {
@@ -172,5 +257,88 @@ h5 {
 @media (max-width: 640px) {
   .c-grid__center .m-game-chat {
     padding: 0;
+  }
+  .c-grid__center .s-text {
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+  .c-grid__center .s-text.s-text--media {
+    padding: 0 10px 0 80px;
+    height: 35px;
+    justify-content: flex-start;
+  }
+  .c-grid__center .s-text.s-text--media img {
+    height: 35px;
+  }
+  .c-grid__center .s-text__inner {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  .c-grid__center .quattro {
+    width: 100%;
+  }
+  .c-grid__center .m-roles__item {
+    width: 25%;
+    height: 12vw;
+    background-size: cover;
+  }
+  .c-grid__center .m-roles__item:not(:last-child) {
+    margin-right: 5px;
+  }
+  .c-grid__center .m-roles__item .m-roles__number {
+    font-size: 3vw;
+    left: 15%;
+  }
+  .c-grid__center .m-roles__item .b-ava {
+    width: 30%;
+    height: auto;
+    margin: 0;
+    right: 5%;
+  }
+  .c-grid__center .m-roles__item .m-roles__name {
+    bottom: 0;
+    right: 5%;
+    width: 90%;
+  }
+  .c-grid__center .m-roles__item .m-roles__name span {
+    font-size: 3vw;
+    font-weight: 500;
+    align-self: flex-end;
+  }
+  .c-grid__center .m-roles__item .m-roles__hint {
+    right: -1vw;
+    font-size: 3vw;
+    width: 4vw;
+    height: 4vw;
+    font-weight: bold;
+  }
+  .c-grid__center .m-roles__item .m-roles__btn {
+    width: 80%;
+    height: 40%;
+    top: 55%;
+  }
+  .c-grid__center .m-roles__item.m-roles__item--selected::after,
+  .c-grid__center .m-roles__item.m-roles__item--selected2::after {
+    top: 2px;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+  }
+  .c-grid__center .m-game-chat .b-counter {
+    font-size: 5vw;
+  }
+  .c-grid__center .m-game-chat .b-counter__item {
+    height: 7vw;
+    line-height: 7vw;
+  }
+  .c-grid__center .m-game-chat .b-ava {
+    width: 11vw;
+    height: 11vw;
+    margin-right: 8px;
+  }
+  .c-grid__center .m-game-chat .s-text__inner {
+    font-size: 3vw;
+    line-height: 4vw;
+    display: block;
   }
 }

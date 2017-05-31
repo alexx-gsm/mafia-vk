@@ -12,59 +12,14 @@
 
     .b-messages {
         width: 100%;
-        //overflow-y: auto;
+        overflow-y: auto;
         .b-message__text { width: 100%; }
     }
     .msg-field {
         display: flex;
         width: 100%;
     }
-    .b-chat-form {
-        background: none;
-        width: 100%;
-        position: relative;
-        &:before {
-            content: '';
-            display: block;
-            width: 20px;
-            height: 78px;
-            background: url("./../img/msg-field/left.png") no-repeat 0 0;
-        }
 
-        .btn-left,
-        .bg-text,
-        .btn-right {
-            background: url("./../img/msg-field/center.png") repeat-x 0 0;
-        }
-        .bg-text {
-            flex-grow: 1;
-            height: 78px;
-            display: flex;
-            align-items: center;
-            padding: 0 65px;
-
-            .s-message { padding-right: 50px; }
-            .s-message__input { width: 100%; }
-            .s-smiles { right: 10px; }
-        }
-        .btn-left button {
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-        .btn-right button {
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-        &:after {
-            content: '';
-            display: block;
-            width: 20px;
-            height: 78px;
-            background: url("./../img/msg-field/right.png") no-repeat 0 0;
-        }
-    }
 }
 
 
